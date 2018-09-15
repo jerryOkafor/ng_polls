@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ng_polls/screens/home.dart';
+import 'package:ng_polls/screens/auth.dart';
 
 void main() => runApp(new MyApp());
 
@@ -20,10 +21,10 @@ class MyApp extends StatelessWidget {
         // counter didn't reset back to zero; the application is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
-
+      home: new MyHomePage(title: 'NG Polls'),
       routes: {
-
+        '/home': (context) => new MyHomePage(title: 'NG Polls'),
+        '/auth': (context) => new Auth()
       },
     );
   }
