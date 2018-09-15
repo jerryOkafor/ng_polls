@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1014545252675",
+    "firebase_url": "https://ng-polls.firebaseio.com",
+    "project_id": "ng-polls",
+    "storage_bucket": "ng-polls.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014545252675:android:095bf63650ae0c96",
+        "android_client_info": {
+          "package_name": "me.jerryhanks.ngpolls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014545252675-oml6aosuknkasvhjpj4kpq51kret2i6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.jerryhanks.ngpolls",
+            "certificate_hash": "22e6ad58264394936ebfe402bed27616801ce952"
+          }
+        },
+        {
+          "client_id": "1014545252675-qsmlju1cqjult8kli2jvosquq4ebqi3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX0Ad12ugQ7-dgPfgDUL1SgnwQbTLFYWc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014545252675-qsmlju1cqjult8kli2jvosquq4ebqi3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
