@@ -12,6 +12,9 @@ dependencies:
   #firabas auth
   firebase_auth: ^0.5.20
 
+  #country code picker
+  country_code_picker: ^1.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

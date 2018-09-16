@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:ng_polls/screens/auth.dart';
 
 class UserData {
   String displayName;
@@ -31,6 +32,7 @@ class UserAuth {
     return await firebaseAuth.signInWithEmailAndPassword(
         email: userData.email, password: userData.password);
   }
+
 
   static Future<Null> logout() async {
     FirebaseAuth firebaseAuth = FirebaseAuth.instance;
