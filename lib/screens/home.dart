@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:ng_polls/base/loading_state.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -18,9 +20,34 @@ class MyHomePage extends StatefulWidget {
   HomeState createState() => new HomeState();
 }
 
-class HomeState extends State<MyHomePage> {
+class HomeState extends LoadingBaseState<MyHomePage> {
   @override
-  Widget build(BuildContext context) {
+  void initState() {
+    super.initState();
+
+    //when this screen is initialised, check for
+    //firebase auth status
+    checkForToken();
+  }
+
+  checkForToken() async {
+    FirebaseAuth.instance.currentUser().then((user) {
+      if (user == null) {
+        Navigator.pushReplacementNamed(context, "/auth");
+
+//        if (user.displayName == null || user.displayName.length == 0) {
+//          Navigator.of(context).pushReplacementNamed("/personal_data");
+//        } else {
+//          Navigator.pushReplacementNamed(context, "/activities");
+//        }
+//      } else {
+//        Navigator.of(context).pushReplacementNamed("/signin");
+      }
+    });
+  }
+
+  @override
+  Widget content() {
     return new Scaffold(
       body: new Center(
         child: Text("This is te Home Screeen"),
